@@ -86,9 +86,6 @@ stateDiagram-v2
 ### Installation & Execution
 
 1. Clone or navigate to the repository directory:
-   ```bash
-   cd c:\Users\sanja\Desktop\Sanjay\ProCoded\FLA
-   ```
 
 2. Run the real-time simulation test suite:
    ```bash
@@ -117,7 +114,6 @@ The runner executes 4 key operational scenarios:
 - [`water_quality_automaton.py`](water_quality_automaton.py) — Core DFA implementation (`WaterQualityDFA`) and data discretization logic.
 - [`simulation_runner.py`](simulation_runner.py) — Interactive CLI test suite with colored state transition displays.
 - [`waterQuality1.csv`](waterQuality1.csv) — Kaggle water quality dataset with 21 physicochemical attributes.
-- [`Final_Project_Report.md`](Final_Project_Report.md) — Comprehensive academic report detailing theory, math, and findings.
-- [`Phase2_Formal_Specification.md`](Phase2_Formal_Specification.md) — Mathematical specification document.
+- [`Formal_Specification.md`](Formal_Specification.md) — Mathematical specification document.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — System architecture, pipeline design, and state machine diagrams.
 - [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md) — Academic context, theoretical justification, and background notes.
