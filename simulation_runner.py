@@ -1,7 +1,7 @@
 import time
 from water_quality_automaton import WaterQualityDFA, discretize_water_data
 
-# ANSI Colors for beautiful CLI output
+# ANSI Colors for CLI output
 GREEN = '\033[92m'
 YELLOW = '\033[93m'
 RED = '\033[91m'
@@ -26,7 +26,7 @@ def run_scenario(name, test_string, dfa, speed=0.3):
     print(f"Data Stream: {test_string}")
     print(f"{CYAN}{'='*60}{RESET}")
     
-    dfa.reset() # Important: Reset FSM back to q0 before each test
+    dfa.reset()
     
     for symbol in test_string:
         prev_raw = dfa.current_state
@@ -46,9 +46,7 @@ if __name__ == "__main__":
     print(f"\n{CYAN}Initializing Smart Sanitation Automata Simulation...{RESET}")
     dfa = WaterQualityDFA()
     
-    # ---------------------------------------------------------
     # TEST SUITE
-    # ---------------------------------------------------------
     
     # Scenario 1: Perfectly safe water over time
     run_scenario("Normal Operation (Ideal Conditions)", "0000000", dfa, speed=0.2)
